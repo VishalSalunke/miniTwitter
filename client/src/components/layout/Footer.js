@@ -12,8 +12,7 @@ const Footer = ({ classes }) => {
 		return (
 					<div className={ classes.root}>
 						<MadeWithLove 
-							by="Vishal Salunke"
-							emoji
+							by="Vishal Salunke"							
 							link="https://vishalsalunke.github.io/Myportfolio"
 						/>
 					</div>
