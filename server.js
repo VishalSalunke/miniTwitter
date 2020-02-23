@@ -30,6 +30,8 @@ if(process.env.NODE_ENV === 'production'){
 	app.use(express.static('client/buid'))
 
 	app.get('*', (req,res)=>{
+		console.log("++++++++++++++++++++   handle route +++++++++++++++++++++++++++++");
+		console.log(req)
 		res.sendFile(path.join(__dirname, 'client', 'build', 'index.html')) //relative path
 	})
 }
