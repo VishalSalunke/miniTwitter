@@ -132,7 +132,7 @@ class Post extends React.Component {
 									    			this.deletePost(post._id)
 						    					}}
 						     				/>
-									: console.log("hi")	
+									: console.log("render post")	
 							}							
 							
 						</h3>
@@ -146,8 +146,8 @@ class Post extends React.Component {
 							/>
 							<div className={classes.commentsLable}
 									 onClick={()=> {									 	
-									 	if(!comments) {
-									 		return false
+									 	if(comments.length <  1) {
+									 		return
 									 	}else{
 									 		this.setState({ showComments : ! showComments	})	
 									 	}
